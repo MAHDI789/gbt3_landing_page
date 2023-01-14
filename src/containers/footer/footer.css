@@ -1,0 +1,80 @@
+.gbt3_footer {
+  margin: 0rem 3rem;
+
+  font-family: var(--font-family);
+}
+.gbt3_footer_header {
+  max-width: 60%;
+  margin: auto;
+  padding-top: 6rem;
+  padding-bottom: 9rem;
+}
+.gbt3_footer_header h1 {
+  margin-bottom: 1.8rem;
+  font-size: 2.7rem;
+  text-align: center;
+}
+.gbt3_footer_header button {
+  background-color: transparent;
+  color: white;
+  padding: 1.1rem 0.8rem;
+  outline: none;
+  border: 1px solid white;
+  font-weight: bold;
+  display: grid;
+  place-content: center;
+  margin: auto;
+  cursor: pointer;
+}
+.gbt3_footer_links {
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6rem;
+  color: white;
+}
+.gbt3_footer_links div {
+  font-size: 0.9rem;
+}
+.gbt3_footer_links .footer_item img {
+  margin-bottom: 1rem;
+}
+.gbt3_footer_links .footer_item h4 {
+  font-weight: bold;
+}
+.gbt3_footer_links .footer_item p {
+  line-height: 1.6rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.gbt3_footer_links .item {
+  display: grid;
+  grid-row-gap: 1.2rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .gbt3_footer_links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  .gbt3_footer_header h1 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gbt3_footer_header h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .gbt3_footer_links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+}

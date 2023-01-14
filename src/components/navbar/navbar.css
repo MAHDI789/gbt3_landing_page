@@ -1,0 +1,132 @@
+.gbt3_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.gbt3_navbar .gbt3_navbar_links {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  gap: 3rem;
+  align-items: center;
+}
+
+.gbt3_navbar .gbt3_navbar_links .gbt3_navbar_list ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  font-family: var(--font-family);
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-style: normal;
+}
+.gbt3_navbar .gbt3_navbar_links .gbt3_navbar_list ul li {
+  cursor: pointer;
+}
+.gbt3_navbar_logo img {
+  width: 62.65px;
+  height: 17.02px;
+}
+.gbt3_navbar_sing button {
+  padding: 0.6rem 1.4rem;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  font-weight: 500;
+  font-family: var(--font-family);
+}
+.gbt3_navbar_sing .Sign-in {
+  background: none;
+}
+.gbt3_navbar_sing .Sign-up {
+  font-weight: 500;
+  background: #ff4820;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.gbt3_navbar_menu {
+  position: relative;
+  margin-left: 1rem;
+  display: none;
+}
+.gbt3_navbar_container_links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
+  flex-direction: column;
+  background: var(--color-footer);
+  position: absolute;
+  top: 28px;
+  min-width: 250px;
+  right: 0;
+  padding: 2rem;
+  margin-top: 1rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gbt3_navbar_container_links ul {
+  color: white;
+}
+.gbt3_navbar_container_links ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gbt3_navbar_container_menu {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .gbt3_navbar_list {
+    display: none;
+  }
+  .gbt3_navbar_menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  .gbt3_navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gbt3_navbar {
+    padding: 2rem;
+  }
+  .gbt3_navbar_sing {
+    display: none;
+  }
+  .gbt3_navbar_container_links {
+    top: 5px;
+  }
+  .gbt3_navbar_container_menu {
+    display: block;
+  }
+  .gbt3_navbar_container_menu button {
+    padding: 0.6rem 1.4rem;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    font-weight: 500;
+    font-family: var(--font-family);
+  }
+  .gbt3_navbar_container_menu .Sign-in {
+    background: none;
+  }
+  .gbt3_navbar_container_menu .Sign-up {
+    font-weight: 500;
+    background: #ff4820;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+} ;

@@ -1,0 +1,17 @@
+.gbt3_brand {
+  padding: 2rem 0rem;
+  display: flex;
+  gap: 3.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+  .gbt3_brand {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+    place-items: center;
+  }
+}

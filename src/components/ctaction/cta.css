@@ -1,0 +1,38 @@
+.gbt3_cta {
+  margin: 8rem 3rem;
+  padding: 2.3rem 2.3rem;
+  background: var(--gradient-bar);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family);
+  border-radius: 10px;
+}
+.gbt3_cta_title p {
+  font-size: 0.8rem;
+}
+.gbt3_cta_title h3 {
+  font-size: 1.7rem;
+  margin-top: 0.2rem;
+  font-weight: bold;
+}
+
+.gbt3_cta_started button {
+  outline: none;
+  background-color: black;
+  color: white;
+  padding: 1rem 2.7rem;
+  border-radius: 25px;
+}
+@media screen and (max-width: 1100px) {
+  .gbt3_cta {
+    display: flex;
+    flex-direction: column;
+  }
+  .gbt3_cta_title {
+    margin-bottom: 1.4rem;
+  }
+  .gbt3_cta_title h3 {
+    font-size: 1.4rem;
+  }
+}
